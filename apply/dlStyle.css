@@ -1,0 +1,111 @@
+.bg{
+	background-color: #ecfbfd;
+	width: 100%;
+	height: 100%;
+
+}
+.body{
+	border: 1.8px solid #ddd;
+	background-color: #fff;
+}
+.head{
+	background-color: #286083;
+	padding: 10px;
+	color: #fff;
+	border-bottom: 1.8px solid #286083;
+}
+/*footer{*/
+/*	background-color: #286083;*/
+/*	padding: 10px;*/
+/*	color: #fff;*/
+/*	border-top: 1.8px solid #286083;*/
+/*	height: 100px;*/
+/*}*/
+.fc{
+	width: 56%!important;
+}
+fieldset.scheduler-border {
+	border: 1.4px solid #ced4da !important;
+	padding: 0 1.4em 1.4em 1.4em !important;
+	margin: 0 0 1.5em 0 !important;
+	-webkit-box-shadow:  0px 0px 0px 0px #000;
+	box-shadow:  0px 0px 0px 0px #000;
+}
+
+legend.scheduler-border {
+	font-size: 1.2em !important;
+	font-weight: bold !important;
+	text-align: left !important;
+	width:auto;
+	padding:0 10px;
+	border-bottom:none;
+}
+label{
+	font-size: 15px;
+	font-weight: 600;
+	color: #2b3c5a;
+}
+.date{
+	font-size: 17px;
+	font-weight: 500;
+	color: #966b6b
+}
+.date1{
+	font-size: 17px;
+	font-weight: 600;
+	color: #da2525;
+
+}
+.top{
+	color: #265273;
+}
+.form-control{
+	border: 1px solid #99b1b4!important;
+}
+.add{
+	font-size: 16px;
+	color: #233863;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.sec{
+	font-size: 12px;
+	color: red;
+	font-weight: 500;
+}
+.nav-tabs .nav-link{
+	color: #5cad2f;
+	font-weight: 500;
+}
+
+
+input[type="radio"] { 
+    visibility: visible;
+    opacity: 1;
+    display: inline-block;
+    vertical-align: middle;
+    width: 15px;
+    height: 15px;
+    padding:0;
+    margin: -3px 3px 0px 0px;
+}
+input[type="checkbox"] { 
+    visibility: visible;
+    opacity: 1;
+    display: inline-block;
+    vertical-align: middle;
+    width: 15px;
+    height: 15px;
+    padding:inherit;
+    float:none!important;
+    margin:5px;
+}
+select, .form-select, input[type=number], input[type=select], input[type=checkbox], input[type=date], input[type=text], input[type=email] {
+    height: 44px!important;
+    padding: 0 15px!important;
+    padding-right: 15px!important;
+    font-size:15px!important;
+}
+ textarea{
+    padding: 15px!important;
+}
