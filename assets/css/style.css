@@ -43,6 +43,13 @@ body {
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
 }
+
+
+.hide
+{
+    display: none;
+}
+
 iframe {
     border: none;
     width: 100%;

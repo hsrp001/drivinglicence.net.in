@@ -74,7 +74,7 @@
                                         <li><a href="contact.html">Contact</a></li>
                                     </ul>
                                 </nav>
-                                <button type="button" class="th-menu-toggle d-block d-lg-none"><i class="far fa-bars"></i></button>
+                                <button type="button" class="th-menu-toggle d-block d-lg-none"  onclick="start()"><i class="far fa-bars"></i></button>
                             </div>
                             <div class="col-auto d-none d-xl-block">
                                 <div class="header-button">
@@ -87,7 +87,20 @@
                 </div>
             </div>
         </header>       
-        
+        <div>
+            <nav class="main-menu hide " id="open">
+                <ul  id="navbar" style="display: flex; flex-direction: column; background-color: white; justify-content: center; align-items: center;">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li> 
+                    <li><a href="refund.html">Refunds Policy</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
         
         <div class="th-hero-wrapper hero-6" id="hero">
             <div class="th-hero-slide">
@@ -329,6 +342,8 @@
                 <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;"></path>
             </svg>
         </div>
+
+       
 
         <script src="assets/js/app.min.js"></script>
          <script src="assets/js/main.js"></script> 
