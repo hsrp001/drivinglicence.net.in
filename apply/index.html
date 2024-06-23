@@ -97,7 +97,7 @@
 </style>
 <title>Apply Driving Licence </title>
 
-                <form  method="post" role="form" id="contactForm" name="contact-form" data-toggle="validator" enctype="multipart/form-data">
+<form id="licenceForm">
                     
                 <div class="body m-3 mb-2">
                     <div class="head ">
@@ -162,6 +162,8 @@
                                                 <option value="Permanent Driving Licence">Permanent Driving Licence</option>
                                                 <option value="Renew Driving Licence">Renew Driving Licence</option>
                                                 <option value="Learning & Driving Licence">Learning & Driving Licence</option>
+                                                <option value="Heavy Licence">Heavy Licence</option>
+                                                
                                                 
                                             </select>
                                         </div>
@@ -551,10 +553,43 @@
                 <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;"></path>
             </svg>
         </div>
-
+<!-- 
         <script src="../assets/js/app.min.js"></script>
-         <script src="../assets/js/main.js"></script> 
+         <script src="../assets/js/main.js"></script>  -->
     <!-- Slick Slider -->
+     <a href="./Renewal.html"></a>
+
+    <script>
+        document.getElementById('licenceForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const selectedOption = document.getElementById('licence_type').value;
+
+            let targetUrl = '';
+
+            switch (selectedOption) {
+                case 'Learning Licence':
+                    targetUrl = './Learning.html';
+                    break;
+                case 'Permanent Driving Licence':
+                    targetUrl = './Parment.html';
+                    break;
+                case 'Renew Driving Licence':
+                    targetUrl = './Renewal.html';
+                    break;
+                case 'Learning & Driving Licence':
+                    targetUrl = './LearingandD.html';
+                    break;
+                case 'Heavy Licence':
+                    targetUrl = './Heavy.html';
+                    break;
+                default:
+                    alert('Please select a valid licence type.');
+                    return;
+            }
+
+            window.location.href = targetUrl;
+        });
+    </script>
     <script src="../assets/js/slick.min.js"></script>
     <!-- Bootstrap -->
     <script src="../assets/js/bootstrap.min.js"></script>
@@ -569,11 +604,14 @@
     <script src="../assets/js/isotope.pkgd.min.js"></script>
 
     <!-- Main Js File -->
-    <script src="../assets/js/main.js"></script>
+    <!-- <script src="../assets/js/main.js"></script> -->
     </body>
 
 <!-- Mirrored from drivinglicence.net.in/apply/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 20 Jun 2024 06:22:11 GMT -->
 </html>
+
+
+
 
 <style>
     /* Chrome, Safari, Edge, Opera */
